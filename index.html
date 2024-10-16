@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Library Project: Odin Fullstack Javascript Path</title>
+</head>
+<body>
+    <div class="content">
+        <div class="card-container" id="bookContainer">
+            <div class="book-card">
+                <h2>Atomic Habits</h2>
+                <p>Author: James Clear</p>
+                <p>Pages: 320</p>
+                <p>Read: Yes</p>
+                <div class="checkbox-container"></div>
+                    <input type="checkbox" id="read" name="read">
+                </div>
+            </div>
+            <!-- Book cards will be dynamically added here -->
+        </div>
+        <div class="sidebar">
+            <h2>Add a Book</h2>
+            <form id="bookForm">
+                <input type="text" id="title" placeholder="Title" required>
+                <input type="text" id="author" placeholder="Author" required>
+                <input type="number" id="pages" placeholder="Pages" required>
+                <div class="checkbox-container">
+                    <label for="read">Read:</label>
+                    <input type="checkbox" id="read" name="read">
+                </div>
+                <button type="submit">Add Book</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
