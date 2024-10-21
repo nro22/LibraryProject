@@ -9,15 +9,6 @@
 <body>
     <div class="content">
         <div class="card-container" id="bookContainer">
-            <div class="book-card">
-                <h2>Atomic Habits</h2>
-                <p>Author: James Clear</p>
-                <p>Pages: 320</p>
-                <p>Read: Yes</p>
-                <div class="checkbox-container"></div>
-                    <input type="checkbox" id="read" name="read">
-                </div>
-            </div>
             <!-- Book cards will be dynamically added here -->
         </div>
         <div class="sidebar">
@@ -27,10 +18,10 @@
                 <input type="text" id="author" placeholder="Author" required>
                 <input type="number" id="pages" placeholder="Pages" required>
                 <div class="checkbox-container">
-                    <label for="read">Read:</label>
+                    <label for="read">previously-read:</label>
                     <input type="checkbox" id="read" name="read">
                 </div>
-                <button type="submit">Add Book</button>
+                <button class="addBookButton" type="button">Add Book</button>
             </form>
         </div>
     </div>
