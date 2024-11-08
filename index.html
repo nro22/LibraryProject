@@ -8,32 +8,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to your Library</h1>
-        <p>I've gone ahead and added some books for you.</p>
-        <p>Try adding your own or selecting if you've already read any of these for a surprise.</p>
-    </header>
-    <div class="content">
-        <div class="card-container" id="bookContainer">
-            <!-- Book cards will be dynamically added here -->
-        </div>
-        <div class="sidebar">
-            <h2>Add a Book</h2>
-            <form id="bookForm">
-                <input type="text" id="title" placeholder="Title" required>
-                <input type="text" id="author" placeholder="Author" required>
-                <input type="number" id="pages" placeholder="Pages" required>
-                <div class="checkbox-container">
-                    <label for="read">previously-read:</label>
-                    <input type="checkbox" id="read" name="read">
-                </div>
-                <button class="addBookButton" type="button">Add Book</button>
-            </form>
+    <div class="wrapper">
+        <header>
+            <h1>Welcome to your Library</h1>
+            <p>I've gone ahead and added some books for you.</p>
+            <p>Try adding your own; or toggle the checkbox to indicate which books you've read or haven't.</p>
+        </header>
+        <div class="content">
+            <div class="card-container" id="bookContainer">
+                <!-- Book cards will be dynamically added here -->
+            </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <div class="sidebar">
+        <h1>Add a Book</h1>
+        <form id="bookForm">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="author" placeholder="Author" required>
+            <input type="number" id="pages" placeholder="Pages" required>
+            <div class="checkbox-container">
+                <label for="read">previously-read:</label>
+                <input type="checkbox" id="read" name="read">
+            </div>
+            <button class="addBookButton" type="button">Add Book</button>
+        </form>
+    </div>
 </body>
 </html>

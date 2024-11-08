@@ -74,7 +74,7 @@ function displayBooks(bookLibrary){
     }
 }
 addBookToLibrary(new Book("Atomic Habits", "James Clear", 320, true));  
-addBookToLibrary(new Book("The Great Gatsby", "F. Scott Fitzgerald", 180, false));
+addBookToLibrary(new Book("The Great Gatsby", "F. Scott Fitzgerald", 180, true));
 addBookToLibrary(new Book("To Kill a Mockingbird", "Harper Lee", 281, false));
 addBookToLibrary(new Book("1984", "George Orwell", 328, true));
 addBookToLibrary(new Book("Pride and Prejudice", "Jane Austen", 279, false));
